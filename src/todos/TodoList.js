@@ -24,10 +24,20 @@ const TodoList = ({ todos = [], onRemovePressed, onCompletedPressed }) => (
     </div>
 );
 
+/**
+ * 
+ * @param {*} state  The object that Represents the Redux State
+ * @returns Take the state object and return another object containing the pieces of that state that our component needs to access to
+ */
 const mapStateToProps = state => ({
     todos: state.todos,
 });
 
+/**
+ * The Dispatch a function that allows to our componetns to trigger actions that our Redux store will respond to
+ * @param {*} dispatch 
+ * @returns 
+ */
 const mapDispatchToProps = dispatch => ({
     onRemovePressed: text => dispatch(removeTodo(text)),
     onCompletedPressed: text => dispatch(markTodoAsCompleted(text)),

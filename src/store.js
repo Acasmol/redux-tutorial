@@ -6,7 +6,7 @@ import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
 import { todos } from './todos/reducers';
 
 /**
- * This is  the Global Store for Redux
+ * This is  the Global Store/Central State for Redux
  * Here is where the state of the components is stored
  */
 

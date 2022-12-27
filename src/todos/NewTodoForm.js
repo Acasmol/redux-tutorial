@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 //High order functions. This means that we call it with two different sets of arguments
 import { connect } from 'react-redux';
-import { createTodo } from './actions';
+import { createTodo } from './actions'; //What acction needs to be happen in this component
 import './NewTodoForm.css';
 
 /**
